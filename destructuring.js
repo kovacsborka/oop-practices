@@ -35,4 +35,27 @@ function funWithPoemData({yearData, authorData}) {
     
 }
 
-funWithPoemData(poemData)
+// funWithPoemData(poemData)
+
+
+// ---------------------TÖMBÖK ESETÉBEN-----------------
+
+const arr = ["hi", "hello", "wassup", function (){
+    console.log("ciao");
+}, "bye"]
+
+const firstItem = arr[0]
+const secondItem = arr[1]
+
+const [firstItemX, secondItemX, ...elseX] = arr
+
+// console.log(firstItemX === firstItem);
+
+console.log(secondItemX);
+
+//console.log(arr[arr.length-1]);
+
+
+const [,,, ourFun] = arr
+
+ourFun()
